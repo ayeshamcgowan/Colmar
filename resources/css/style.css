@@ -5,8 +5,13 @@
 html{
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  color: #404040;
+  color: 	#585858;
 
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 header{
@@ -36,7 +41,6 @@ header{
 }
 #academy{
   font-weight: 300;
-
   color: #A9A9A9;
 }
 
@@ -51,4 +55,35 @@ nav a{
   color: #404040;
   margin-left: 1rem;
   margin-right: 0rem;
+}
+
+.banner{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #D0D0D0;
+}
+
+
+.banner img{
+  width: 60%;
+  height: 100%;
+  margin: 32px 24px;
+}
+
+.something{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 30%;
+}
+
+button{
+  width: 80%;
+  height: 3rem;
+  padding: .5rem;
+  font-size: 1.2rem;
+  color: #D0D0D0;
+  background-color: #585858;
 }
