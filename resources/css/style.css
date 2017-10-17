@@ -1,6 +1,4 @@
-*{
-  border: red dotted 1px;
-}
+
 
 html{
   font-size: 16px;
@@ -14,6 +12,15 @@ h1{
   font-weight: bold;
 }
 
+h3{
+margin:0rem;
+padding-bottom: .5rem;
+font-size: 2rem;
+font-weight: 400;
+}
+
+/*header*/
+
 header{
   height: 4rem;
   font-size: 2rem;
@@ -25,24 +32,25 @@ header{
   padding-right: 1.5rem;
 }
 
-#logo{
+.logo{
  display: flex;
  height: 2rem;
  align-items: center;
  font-size: 1.7rem;
 }
 
-#logo img{
+.logo img{
   height: 2.8rem;
 }
 
-#colmar{
+.colmar{
   font-weight: medium;
 }
-#academy{
+.academy{
   font-weight: 300;
   color: #A9A9A9;
 }
+
 
 nav{
   font-size: 1.4rem;
@@ -57,6 +65,9 @@ nav a{
   margin-right: 0rem;
 }
 
+
+/*banner*/
+
 .banner{
   display: flex;
   flex-flow: row nowrap;
@@ -64,19 +75,23 @@ nav a{
 }
 
 
-.banner img{
+.left{
   width: 60%;
-  height: 100%;
-  margin: 32px 24px;
+  padding: 32px 24px;
 }
 
-.something{
+.banner img{
+  width: 100%;
+  height: auto;
+}
+
+.right{
+  width: 40%;
   display: flex;
   flex-flow: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  width: 30%;
 }
 
 button{
@@ -86,4 +101,95 @@ button{
   font-size: 1.2rem;
   color: #D0D0D0;
   background-color: #585858;
+}
+
+/*information section */
+
+.info{
+  background-color: #FFFFFF;
+  font-size: 1.1rem;
+}
+
+.information{
+  display:flex;
+  flex-flow: row nowrap;
+}
+
+.information img{
+  width: 35%;
+  height: 100%;
+  margin: 1rem;
+}
+
+.left p{
+  margin-bottom: 2rem;
+}
+
+/* detail boxes */
+
+.details{
+  width: 65%;
+  margin: 0rem;
+  display:flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: .5rem;
+  text-align: left;
+}
+
+
+.details span{
+  margin-bottom: .5rem;
+}
+.details a{
+  text-decoration: none;
+  color: coral;
+}
+
+.information:last-child{
+  background-color: #D0D0D0;
+}
+
+/* Course offerings */
+
+.learning{
+  background-color: #D0D0D0;
+  text-align: center;
+  padding: 2rem 4.5rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.learning h1{
+  margin: 2rem auto 0rem auto;
+}
+
+.courses{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.majors{
+  text-align: left;
+  width: 30%;
+  margin: 2rem 2rem 2rem 0rem;
+  background-color: #FFFFFF;
+}
+
+.deets{
+  padding: 1rem;
+}
+.majors img{
+  width: 100%;
+  height: auto;
+}
+
+.majors p{
+  margin: .5rem 1rem 1.5rem 0rem;
+}
+
+.majors:nth-child(3n+0){
+  margin-right: 0rem;
 }
