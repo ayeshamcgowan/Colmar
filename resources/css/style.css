@@ -3,13 +3,18 @@
 html{
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  color: 	#585858;
+  color:#909090
 
 }
 
 h1{
   font-size: 2.5rem;
   font-weight: bold;
+  color:#585858
+}
+
+h2{
+  color:#585858
 }
 
 h3{
@@ -17,6 +22,7 @@ margin:0rem;
 padding-bottom: .5rem;
 font-size: 2rem;
 font-weight: 400;
+color: #585858
 }
 
 /*header*/
@@ -58,11 +64,15 @@ nav{
   flex-flow: row nowrap;
 }
 
-nav a{
+header a{
   text-decoration: none;
   color: #404040;
   margin-left: 1rem;
   margin-right: 0rem;
+}
+
+header a:hover{
+  color: #A9A9A9;
 }
 
 
@@ -71,13 +81,17 @@ nav a{
 .banner{
   display: flex;
   flex-flow: row nowrap;
-  background-color: #D0D0D0;
+  background-color: ##909090;
 }
 
 
 .left{
   width: 60%;
   padding: 32px 24px;
+  display:flex;
+  flex-flow: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .banner img{
@@ -92,6 +106,8 @@ nav a{
   align-items: center;
   text-align: center;
   justify-content: center;
+  justify-content: flex-start;
+  padding-top: .8rem;
 }
 
 button{
@@ -99,8 +115,15 @@ button{
   height: 3rem;
   padding: .5rem;
   font-size: 1.2rem;
-  color: #D0D0D0;
+  color: #E0E0E0;
   background-color: #585858;
+  transition: color 200ms linear 100ms,
+  background-color 200ms linear 100ms;
+}
+
+button:hover{
+  color: #585858;
+  background-color: #E0E0E0;
 }
 
 /*information section */
@@ -147,21 +170,21 @@ button{
   color: coral;
 }
 
-.information:last-child{
-  background-color: #D0D0D0;
+.info .information:last-child{
+  background-color: #E0E0E0;
 }
 
 /* Course offerings */
 
-.learning{
-  background-color: #D0D0D0;
+.content{
+  background-color: #E0E0E0;
   text-align: center;
   padding: 2rem 4.5rem;
   display: flex;
   flex-flow: column;
 }
 
-.learning h1{
+.content h1{
   margin: 2rem auto 0rem auto;
 }
 
@@ -175,7 +198,7 @@ button{
   text-align: left;
   width: 30%;
   margin: 2rem 2rem 2rem 0rem;
-  background-color: #FFFFFF;
+  background-color: #F5F5F5;
 }
 
 .deets{
@@ -192,4 +215,60 @@ button{
 
 .majors:nth-child(3n+0){
   margin-right: 0rem;
+}
+
+/* Thesis exhibition */
+
+.thesis{
+  background-color: #F5F5F5;
+  padding: 0rem;
+}
+
+.thesis .banner{
+  background-color: #F5F5F5;
+  margin-top: 2rem;
+}
+.thesis video{
+  width: 100%;
+  height: auto;
+  margin: 0rem;
+}
+
+.thesis .left{
+padding-top: 0rem;
+}
+
+.thesis .information:first-child{
+  background-color: #E0E0E0;
+}
+
+/* footer */
+
+footer{
+  background-color: #F5F5F5;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 16px 24px;
+}
+
+footer nav{
+  text-align: right;
+  display: inline-block;
+}
+
+footer a{
+  text-decoration: none;
+  color:#909090;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+footer a:hover{
+  color: #585858
+}
+
+footer span{
+  padding: 0;
 }
