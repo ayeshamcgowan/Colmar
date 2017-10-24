@@ -24,9 +24,16 @@ margin:0rem;
 padding-bottom: .5rem;
 font-size: 2rem;
 font-weight: 400;
-color: #585858
+color: #585858;
 }
 
+@media only screen and (max-width: 1200px){}
+
+  html{
+    font-size: 13px;
+    line-height: 1.5rem;
+  }
+}
 /*header*/
 
 header{
@@ -201,14 +208,6 @@ button:hover{
   margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 480px){
-
-  .info .left{
-    display: none;
-  }
-}
-
-
 /* detail boxes */
 
 .details{
@@ -222,6 +221,9 @@ button:hover{
   text-align: left;
 }
 
+.details h3{
+
+}
 
 .details span{
   margin-bottom: .5rem;
@@ -232,9 +234,36 @@ button:hover{
 }
 
 .info .information:last-child{
-  background-color: #E0E0E0;
+ background-color: #E0E0E0;
 }
 
+@media only screen and (max-width: 480px){
+
+  .info .left{
+    display: none;
+  }
+
+  .information{
+    width: 100%;
+    flex-flow: column wrap;
+  }
+   .information img{
+    width: 100%;
+    margin: 0rem;
+   }
+
+  .details{
+    width: auto;
+  }
+
+  .info h3{
+    margin-top: 1rem;
+  }
+
+  .info .information:last-child{
+    background-color: #FFFFFF;
+  }
+}
 /* Course offerings */
 
 .content{
@@ -256,10 +285,11 @@ button:hover{
 }
 
 .majors{
+  background-color: #FFFFFF;
   text-align: left;
   width: 30%;
   margin: 2rem 2rem 2rem 0rem;
-  background-color: #F5F5F5;
+
 }
 
 .deets{
@@ -285,6 +315,46 @@ button:hover{
 
 .majors:nth-child(3n+0){
   margin-right: 0rem;
+}
+
+
+
+@media only screen and (max-width: 480px){
+  .majors img,
+  .majors p,
+  .majors span{
+    display: none;
+  }
+
+  .learning h1{
+    margin-bottom: 1rem;
+  }
+
+  .majors{
+    width: 90%;
+    margin: .5rem 1.5rem;
+    border: #585858 solid .2rem;
+  }
+
+  .content a{
+    text-decoration: none;
+    color:#585858;
+  }
+
+  .content a:hover{
+    color: #D0D0D0;
+  }
+
+  .majors:nth-child(3n+0){
+    margin: .5rem 1.5rem;
+  }
+
+  .learning{
+    padding: 0rem;
+    }
+  }
+
+
 }
 
 /* Thesis exhibition */
@@ -317,6 +387,13 @@ padding-top: 0rem;
   background-color: #E0E0E0;
 }
 
+@media only screen and (max-width: 480px){
+    .thesis .right,
+    .thesis p,
+    .thesis h3{
+    display:none;
+  }
+ }
 /* footer */
 
 footer{
@@ -347,3 +424,10 @@ footer a:hover{
 footer span{
   padding: 0;
 }
+
+
+@media only screen and (max-width: 480px){
+ footer a{
+   display:none;
+ }
+ }
