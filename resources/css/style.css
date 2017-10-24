@@ -27,11 +27,19 @@ font-weight: 400;
 color: #585858;
 }
 
-@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1200px){
 
   html{
     font-size: 13px;
     line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px){
+
+  html{
+    font-size: 11px;
+    line-height: 1.1rem;
   }
 }
 /*header*/
@@ -237,6 +245,12 @@ button:hover{
  background-color: #E0E0E0;
 }
 
+@media only screen and (max-width: 900px){
+
+  .tablet{
+    display: none;
+  }
+
 @media only screen and (max-width: 480px){
 
   .info .left{
@@ -317,6 +331,16 @@ button:hover{
   margin-right: 0rem;
 }
 
+@media only screen and (max-width: 670px){
+  .majors{
+    width: 40%;
+  }
+
+  .majors:nth-child(3n+0){
+    margin-right: 2rem;
+  }
+
+}
 
 
 @media only screen and (max-width: 480px){
