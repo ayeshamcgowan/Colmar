@@ -25,6 +25,7 @@ padding-bottom: .5rem;
 font-size: 2rem;
 font-weight: 400;
 color: #585858;
+line-height: 2.5rem;
 }
 
 @media only screen and (max-width: 1200px){
@@ -98,6 +99,20 @@ header a:hover{
   display:none;
 }
 
+@media only screen and (max-width: 550px){
+
+  nav.desktop,
+  .logo{
+    display:none;
+  }
+
+  nav.mobile{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+}
 @media only screen and (max-width: 480px){
 
 
@@ -229,10 +244,6 @@ button:hover{
   text-align: left;
 }
 
-.details h3{
-
-}
-
 .details span{
   margin-bottom: .5rem;
 }
@@ -245,11 +256,18 @@ button:hover{
  background-color: #E0E0E0;
 }
 
-@media only screen and (max-width: 900px){
 
-  .tablet{
-    display: none;
+@media only screen and (max-width: 1070px){
+
+  .info .information:last-child{
+   background-color: #FFFFFF;
   }
+
+  .information{
+    margin: 1rem auto;
+  }
+}
+
 
 @media only screen and (max-width: 480px){
 
@@ -278,6 +296,7 @@ button:hover{
     background-color: #FFFFFF;
   }
 }
+
 /* Course offerings */
 
 .content{
@@ -331,7 +350,7 @@ button:hover{
   margin-right: 0rem;
 }
 
-@media only screen and (max-width: 670px){
+@media only screen and (min-width: 481px) and (max-width: 670px){
   .majors{
     width: 40%;
   }
@@ -377,9 +396,6 @@ button:hover{
     padding: 0rem;
     }
   }
-
-
-}
 
 /* Thesis exhibition */
 
